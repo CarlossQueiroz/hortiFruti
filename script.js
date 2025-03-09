@@ -146,7 +146,7 @@ addressInput.addEventListener("input", function (event) {
     }
 });
 
-//Botão de finalizar compra
+//FINALIZAR COMPRA
 checkOutBtn.addEventListener("click", function () {
     const isOpen = checkOpen();
     if (!isOpen) {
