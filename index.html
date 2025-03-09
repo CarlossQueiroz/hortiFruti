@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Biblioteca:-Toastify-js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Biblioteca:-Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Biblioteca:-Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Hortifruti DEV - O melhor mercadinho de frutas</title>
+</head>
+
+<body class="select-none">
+
+    <nav class="w-full bg-green-500 flex justify-between items-center px-24 py-2 md:fixed">
+        <img src="./assets/logo_CQ.png">
+        <div class="flex items-center gap-7 mt-5 sm:mt-0">
+            <a href="#menu" class="ease-in duration-300 text-white font-semibold hidden md:flex hover:scale-110">
+                Produtos
+            </a>
+            <button class="flex items-center gap-1 bg-white text-green-500 rounded-lg px-3" id="cart-btn">
+                <i class="fa fa-cart-plus text-lg"></i>
+                <span id="cart-count" class="font-bold text-xs">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header class="w-full flex flex-col">
+
+        <div class="w-full flex p-24 md:items-center">
+            <div class="md:w-full md:mr-10 ">
+                <h1 class="text-5xl">Sobre o <br><span class="text-green-500 font-bold">CQ Frutas</span></h1>
+
+                <p class="text-xl font-medium my-4">Estamos +30 anos levando qualidades e sabor a sua mesa.</p>
+                <p class="text-base text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
+                    omnis ex aperiam quis hic veritatis at reprehenderit, praesentium suscipit accusamus id quisquam
+                    totam recusandae esse a dolor labore et. At.</p>
+                <p class="font-medium my-2"><i class="fa-solid fa-location-dot"></i> Rua Francisco Nonato dos Santos,
+                    Serra da Garrapa -
+                    PE</p>
+                <p class="text-green-600 font-medium my-2" id="date-span"><i class="fa-solid fa-clock"></i> Seg à Sex -
+                    8:00 às 16:00</p>
+                <button href="#"
+                    class="rounded-full bg-green-500 px-7 py-3 mt-5 text-sm font-semibold text-white shadow-sm hover:bg-green-600">Fale
+                    com a gente</button>
+            </div>
+            <div>
+                <img class="hidden md:flex" src="./assets/frutas.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+
+    <h2 class="text-2xl md:text-3xl font bold text-center mt-9 mb-10">Veja nossos produtos:</h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 md:gap-10 mx-auto max-w-7xl px-24 mb-16">
+            <!--INICIO PRODUTO-->
+            <div class="flex items-center justify-center flex-col border-2 border-slate-100 rounded-md shadow-md py-4">
+                <img src="./assets/abacate.png" class="w-20 h-20 hover:scale-110 hover:rotate-6 duration-300"
+                    alt="Abacate">
+                <div class="text-center">
+                    <p class="text-lg font-bold text-center mt-2">Abacate</p>
+                    <p class="text-sm">Peso médio: 600g</p>
+                    <p class="text-sm text-center font-bold">R$ 15.60 /kg</p>
+                    <button
+                        class="text-green-500 font-semibold text-sm border border-green-400 hover:border-green-500 px-3 my-2 rounded add-to-cart-btn hover:scale-105"
+                        data-name="Abacate" data-price="15.60" data-weight="0.6"><i class="fa fa-cart-plus text-lg"></i>
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+            <!--FIM PRODUTO-->
+
+            <!--INICIO PRODUTO-->
+            <div class="flex items-center justify-center flex-col border-2 border-slate-100 rounded-md shadow-md py-4">
+                <img src="./assets/banana.png" class="w-20 h-20 hover:scale-110 hover:rotate-6 duration-300"
+                    alt="Banana">
+                <div class="text-center">
+                    <p class="text-lg font-bold text-center mt-2">Banana</p>
+                    <p class="text-sm">Peso médio: 190</p>
+                    <p class="text-sm text-center font-bold">R$ 10.98 /kg</p>
+                    <button
+                        class="text-green-500 font-semibold text-sm border border-green-400 hover:border-green-500 px-3 my-2 rounded add-to-cart-btn hover:scale-105"
+                        data-name="Banana" data-price="10.98" data-weight="0.19"><i class="fa fa-cart-plus text-lg"></i>
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+            <!--FIM PRODUTO-->
+
+            <!--INICIO PRODUTO-->
+            <div class="flex items-center justify-center flex-col border-2 border-slate-100 rounded-md shadow-md py-4">
+                <img src="./assets/melancia.png" class="w-20 h-20 hover:scale-110 hover:rotate-6 duration-300"
+                    alt="Melancia">
+                <div class="text-center">
+                    <p class="text-lg font-bold text-center mt-2">Melancia</p>
+                    <p class="text-sm">Peso médio: 2kg</p>
+                    <p class="text-sm text-center font-bold">R$ 10.76 /kg</p>
+                    <button
+                        class="text-green-500 font-semibold text-sm border border-green-400 hover:border-green-500 px-3 my-2 rounded add-to-cart-btn hover:scale-105"
+                        data-name="Melancia" data-price="10.76" data-weight="2"><i class="fa fa-cart-plus text-lg"></i>
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+            <!--FIM PRODUTO-->
+
+            <!--INICIO PRODUTO-->
+            <div class="flex items-center justify-center flex-col border-2 border-slate-100 rounded-md shadow-md py-4">
+                <img src="./assets/mamão.png" class="w-20 h-20 hover:scale-110 hover:rotate-6 duration-300" alt="Mamão">
+                <div class="text-center">
+                    <p class="text-lg font-bold text-center mt-2">Mamão</p>
+                    <p class="text-sm">Peso médio: 600g</p>
+                    <p class="text-sm text-center font-bold">R$ 25.90 /kg</p>
+                    <button
+                        class="text-green-500 font-semibold text-sm border border-green-400 hover:border-green-500 px-3 my-2 rounded add-to-cart-btn hover:scale-105"
+                        data-name="Mamão" data-price="25.90" data-weight="0.6"><i class="fa fa-cart-plus text-lg"></i>
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+            <!--FIM PRODUTO-->
+
+            <!--INICIO PRODUTO-->
+            <div class="flex items-center justify-center flex-col border-2 border-slate-100 rounded-md shadow-md py-4">
+                <img src="./assets/maça.jpg" class="w-20 h-20 hover:scale-110 hover:rotate-6 duration-300" alt="Maça">
+                <div class="text-center">
+                    <p class="text-lg font-bold text-center mt-2">Maça</p>
+                    <p class="text-sm">Peso médio: 1kg</p>
+                    <p class="text-sm text-center font-bold">R$ 17.88 /kg</p>
+                    <button
+                        class="text-green-500 font-semibold text-sm border border-green-400 hover:border-green-500 px-3 my-2 rounded add-to-cart-btn hover:scale-105"
+                        data-name="Maça" data-price="17.88" data-weight="2"><i class="fa fa-cart-plus text-lg"></i>
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+            <!--FIM PRODUTO-->
+        </main>
+    </div>
+
+
+    <!--MODAL CART-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] overflow-y-auto md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo" id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-500 text-xs hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--FIM MODAL CART-->
+
+    <footer class="text-white bg-green-500 px-24 py-10 sm:justify-between sm:items-center sm:flex sm:gap-10">
+        <div class="text-justify">
+            <h3 class="text-xl font-semibold">Carlos Queiroz</h3>
+            <p class="text-sm">
+                Desenvolvedor focado na construção de experiências digitais fluidas, combinando design intuitivo com
+                código eficiente e acessível.
+            </p>
+        </div>
+
+        <div class="flex gap-4 text-2xl mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/carlos-queiroz-backend" target="_blank">
+                <i class="fa-brands fa-linkedin-in hover:scale-110 duration-300"></i>
+            </a>
+            <a href="https://github.com/CarlossQueiroz" target="_blank">
+                <i class="fa-brands fa-github hover:scale-110 duration-300"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
