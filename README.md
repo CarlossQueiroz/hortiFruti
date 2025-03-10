@@ -1,10 +1,11 @@
 # Hortifruti DEV
+![imagem 1: Aplicação HortiFruti DEV](https://github.com/user-attachments/assets/e4fdab8d-38da-423c-aaa7-35cbf26b6058)
 
-![imagem da aplicação HortiFruti DEV](https://github.com/user-attachments/assets/3025bee5-1e9e-419e-aef8-64add2f200d0)
+![imagem 2: Aplicação HortiFruti DEV](https://github.com/user-attachments/assets/66249517-61dd-4d7d-80a8-65b535f4d9b2)
 
 A aplicação simula um carrinho de compras para um hortifruti, permitindo que os usuários visualizem os produtos disponíveis, adicionem itens ao carrinho e finalizem o pedido de maneira simples e rápida. Ao final do processo, o usuário pode enviar a lista de itens diretamente para o WhatsApp, facilitando o pedido e a comunicação com o estabelecimento. O layout da aplicação foi projetado com o TailwindCSS, garantindo um visual moderno e responsivo, enquanto a lógica de interação e manipulação dos dados do carrinho foi implementada utilizando JavaScript.
 
-Acesse: https://horti-fruti.vercel.app/ 
+[HortiFruti DEV](http://horti-fruti.vercel.app "HortiFruti DEV")
 
 ## 🔨 Funcionalidades
 - **Exibição de Produtos: **A aplicação exibe produtos disponíveis no hortifruti, com imagens e preços.
