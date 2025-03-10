@@ -153,7 +153,7 @@ checkOutBtn.addEventListener("click", function () {
         Toastify({
             text: "Restaurante fechado no momento!",
             duration: 5000,
-             close: true,
+            close: true,
             gravity: "top", // `top` or `bottom`
             position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
@@ -171,5 +171,19 @@ checkOutBtn.addEventListener("click", function () {
         addressInput.classList.add("border-red-500");
         return;
     }
+
+    const cartItems = cart.map((item) => {
+        return (
+            `${item.name} Quantidade: (${item.quantity}) Preço:${item.price} |`
+        )
+    }).join("");
+
+    const message = encodeURIComponent(cartItems);
+    const phone = "000000000";
+
+    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank");
+    cart = [];
+    updateCartModal();
+    addressInput.value = "";
 
 });
